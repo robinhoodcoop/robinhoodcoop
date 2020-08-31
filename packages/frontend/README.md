@@ -4,11 +4,13 @@ The frontend to browse the `RobinHoodCoop` DAO and its `ERC20`.
 
 ## Dependencies
 
-email js
+  email js
 
-the graph
+  the graph
 
-fortmatic
+  fortmatic
+
+  netlify
 
 fonts.googleapis.com
 css family=Monoton display=swap
@@ -75,6 +77,10 @@ in `src/lib/validations.js`
 in `src/sections/home/actions/Signup.svelte`
 
   const phoneFormat = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+# strings
+
+as ad hoc index, use `STRINGS.md` and find the file inside the repo accordingly. eventually, internationalization should replace this
 
 ## Development
 
