@@ -29,7 +29,7 @@
     if (await validate()) {
       try {
         const tx = await coop.grantAdmin(admin)
-        notify.default('Admin being added through tx ' + tx.hash)
+        notify.default("Admin being added through tx <a href=https://etherscan.io/tx/" + tx.hash + " target='_blank' >" + tx.hash + "</a>")
         await tx.wait()
         notify.success('Admin added. You will be redirected soon ...')
         setTimeout(() => {

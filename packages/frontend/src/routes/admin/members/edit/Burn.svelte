@@ -25,7 +25,7 @@
     if (opts.all) {
       let balance = share.balanceOf(member.address)
       const tx    = await coop.burn(member.address, balance)
-      notify.default('Shares being burnt through tx ' + tx.hash)
+      notify.default("Shares being burnt through tx <a href=https://etherscan.io/tx/" + tx.hash + " target='_blank' >" + tx.hash + "</a>")
       await tx.wait()
       amount  = 0
       balance = await share.balanceOf(member.address)
@@ -38,7 +38,7 @@
     } else if (amount > 0) {
       try {
         const tx = await coop.burn(member.address, toFixed(amount))
-        notify.default('Shares being burnt through tx ' + tx.hash)
+        notify.default("Shares being burnt through tx <a href=https://etherscan.io/tx/" + tx.hash + " target='_blank' >" + tx.hash + "</a>")
         await tx.wait()
         notify.success('Shares burnt')
         amount        = 0

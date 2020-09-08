@@ -15,7 +15,7 @@
     if (amount > 0) {
       try {
         const tx = await coop.mint(member.address, toFixed(amount))
-        notify.default('Shares being minted through tx ' + tx.hash)
+        notify.default("Shares being minted through tx <a href=https://etherscan.io/tx/" + tx.hash + " target='_blank' >" + tx.hash + "</a>")
         await tx.wait()
         notify.success('Shares minted')
         amount        = 0

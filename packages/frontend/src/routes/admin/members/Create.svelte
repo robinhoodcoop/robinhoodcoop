@@ -56,7 +56,7 @@
     if (await validate()) {
       try {
         const tx = await coop.mint(member.address, toFixed(member.shares))
-        notify.default('Member being added through tx ' + tx.hash)
+        notify.default("Member being added through tx <a href=https://etherscan.io/tx/" + tx.hash + " target='_blank' >" + tx.hash + "</a>")
         await tx.wait()
         await emailjs.send(SERVICE_ID, TEMPLATE_ID, { email: member.email })
 

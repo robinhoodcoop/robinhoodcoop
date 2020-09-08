@@ -22,11 +22,11 @@
     _admins = (await admins).data.admins
     loading  = false
   })
-  
+
   const revoke = async (address) => {
     try {
       const tx = await coop.revokeAdmin(address)
-      notify.default('Admin being revoked through tx ' + tx.hash)
+      notify.default("Admin being revoked through tx <a href=https://etherscan.io/tx/" + tx.hash + " target='_blank' >" + tx.hash + "</a>")
       await tx.wait()
       notify.success('Admin revoked')
       setTimeout(() => {

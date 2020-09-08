@@ -31,7 +31,7 @@
 
     try {
       const tx = await coop.updateValue(toFixed(update))
-      notify.default('Value being updated through tx ' + tx.hash)
+      notify.default("Value being updated through tx <a href=https://etherscan.io/tx/" + tx.hash + " target='_blank' >" + tx.hash + "</a>")
       await tx.wait()
       notify.success('Value updated')
       update = null
