@@ -84,6 +84,65 @@ as ad hoc index, use `STRINGS.md` and find the file inside the repo accordingly.
 
 ## Development
 
+## Testnet kovan details
+
+### frontend
+
+in `packages/frontend/src/App.svelte`
+
+kovan
+network !== '42'
+mainnet
+network !== '1'
+
+in `packages/frontend/src/lib/coop.js`
+
+kovan
+const ADDRESS = '0xdA08FcdD705750A6738445a6E9c2D76dAE6d8576'
+
+const provider = ethers.getDefaultProvider('kovan')
+
+mainnet
+const ADDRESS = '0x1030e7bb1fB3a9EEE118C5cca4EBAfDAA3d350D1'
+
+const provider = ethers.getDefaultProvider('mainnet')
+
+in `packages/frontend/src/lib/share.js`
+
+kovan
+const ADDRESS = '0x0dc3B1B84Ca64d06cD453C2257fa86714C024574'
+
+const provider = ethers.getDefaultProvider('kovan')
+
+mainnet
+const ADDRESS = '0xaB9382C0aD4BD6c4Efd578f54b0DA1804F766e60'
+
+const provider = ethers.getDefaultProvider('mainnet')
+
+in `packages/frontend/src/routes/admin/Error.svelte`
+
+{:else if network !== '42'}
+<p>Your are connected to the wrong network. Please select the kovan network in Metamask.</p>
+
+mainnet
+{:else if network !== '1'}
+<p>Your are connected to the wrong network. Please select the mainnet network in Metamask.</p>
+
+### subgraph
+
+in `packages/subgraph/subgraph.yaml`
+
+  name: RobinHoodCoop
+    network: kovan
+       address: '0xdA08FcdD705750A6738445a6E9c2D76dAE6d8576'
+       startBlock: 18062977
+
+  name: RobinHoodShare
+    network: kovan
+       address: '0x0dc3B1B84Ca64d06cD453C2257fa86714C024574'
+       startBlock: 18062977
+
+
 ##### » install and link dependencies
 
 ```sh
