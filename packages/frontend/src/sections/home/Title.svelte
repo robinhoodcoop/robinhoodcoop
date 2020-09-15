@@ -29,7 +29,7 @@
     </Animate>
   {:else}
     <Animate>
-      <h1>Robin Hood Coop</h1>
+      <h1>Stage Robin Hood Coop</h1>
     </Animate>
   {/if}
 </section>

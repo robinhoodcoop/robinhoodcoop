@@ -115,7 +115,7 @@
           <td>members</td>
         </tr>
         <tr>
-          <td>{members}/td>
+          <td>{members}</td>
           <td>members on blockchain</td>
         </tr>
         <tr>
