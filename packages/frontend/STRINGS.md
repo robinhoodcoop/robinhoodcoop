@@ -1,4 +1,4 @@
-in `src/routes/admin/admins/Create.svelte`
+in [src/routes/admin/admins/Create.svelte](src/routes/admin/admins/Create.svelte)
 
     error = 'this address already belongs to an existing admin'
     error = 'invalid ethereum address'
@@ -13,7 +13,7 @@ in [src/routes/admin/admins/List.svelte](src/routes/admin/admins/List.svelte)
     a = revoke »
     this is you ...
 
-in `src/routes/admin/members/edit/Burn.svelte`
+in [src/routes/admin/members/edit/Burn.svelte](src/routes/admin/members/edit/Burn.svelte)
 
     notification = Shares being burnt through tx ' + tx.hash)
     notification = Shares burnt. You will be redirected soon ...
@@ -25,7 +25,7 @@ in `src/routes/admin/members/edit/Burn.svelte`
     to the current member's balance.
 
 
-in `src/routes/admin/members/edit/Mint.svelte`
+in [src/routes/admin/members/edit/Mint.svelte](src/routes/admin/members/edit/Mint.svelte)
 
   notification = Shares being minted through tx ' + tx.hash)
   notification = Shares minted
@@ -35,7 +35,7 @@ in `src/routes/admin/members/edit/Mint.svelte`
   to the current member's balance.
 
 
-in `src/routes/admin/members/Create.svelte`
+in [src/routes/admin/members/Create.svelte](src/routes/admin/members/Create.svelte)
 
     errors.address = 'this address already belongs to an existing member'
     errors.address = 'invalid ethereum address'
@@ -44,12 +44,12 @@ in `src/routes/admin/members/Create.svelte`
     notification = Member being added through tx ' + tx.hash
     notification = Member added. You will be redirected soon ...
 
-in `src/routes/admin/members/Edit.svelte`
+in [src/routes/admin/members/Edit.svelte](src/routes/admin/members/Edit.svelte)
 
     link = « go back
     error = Unknown member {address}
 
-in `src/routes/admin/members/List.svelte`
+in [src/routes/admin/members/List.svelte](src/routes/admin/members/List.svelte)
 
     Members
     button = add a member
@@ -57,7 +57,7 @@ in `src/routes/admin/members/List.svelte`
     Shares
     link = edit »
 
-in `src/routes/admin/shares/Shares.svelte`
+in [src/routes/admin/shares/Shares.svelte](src/routes/admin/shares/Shares.svelte)
 
     notification = Value being updated through tx ' + tx.hash
     notification = Value updated
@@ -66,36 +66,36 @@ in `src/routes/admin/shares/Shares.svelte`
     EUR / share
     last updated on
 
-in `src/routes/admin/Error.svelte`
+in [src/routes/admin/Error.svelte](src/routes/admin/Error.svelte)
 
     Your are connected to the wrong network. Please select the mainnet network in Metamask.
     Your are not identified as a RobinHoodCoop admin. Please pick up a different account in Metamask.
 
-in `src/routes/NotFound.svelte`
+in [src/routes/NotFound.svelte](src/routes/NotFound.svelte)
 
     404
     not found
 
-in `src/sections/admin/Nav.svelte`
+in [src/sections/admin/Nav.svelte](src/sections/admin/Nav.svelte)
 
     link = members
     link = admins
     link = shares
 
 
-in `src/sections/home/actions/Dispatch.svelte`
+in [src/sections/home/actions/Dispatch.svelte](src/sections/home/actions/Dispatch.svelte)
 
     message = "Your account needs to be activated by an admin.\nRHcoop will send you an email as soon as your account is ready for log in.\nKeep an eye on your inbox [and spam folder too]."
     button = login
     button = signup
 
-in `src/sections/home/actions/Login.svelte`
+in [src/sections/home/actions/Login.svelte](src/sections/home/actions/Login.svelte)
 
     message = 'Check your inbox [including your spam folder].'
     message = 'Your account needs to be activated by an admin. RHcoop will send you an email as soon as your account is ready for log in. Keep an eye on your inbox [and spam folder too].'
     checking if a member is already logged in ...
 
-in `src/sections/home/actions/Signup.svelte`
+in [src/sections/home/actions/Signup.svelte](src/sections/home/actions/Signup.svelte)
 
     message += '\nplease provide a valid email'
     message += '\nplease provide a valid phone number'
@@ -114,7 +114,7 @@ in `src/sections/home/actions/Signup.svelte`
     1 Rue des Dames, 75001 Paris, France
     terms and conditions.
 
-in `src/sections/home/Data.svelte`
+in [src/sections/home/Data.svelte](src/sections/home/Data.svelte)
 
     shares
     EUR per share
@@ -131,12 +131,12 @@ in `src/sections/home/Data.svelte`
     EUR per share
     last updated on
 
-in `src/sections/home/Nav.svelte`
+in [src/sections/home/Nav.svelte](src/sections/home/Nav.svelte)
 
     link = go back
     link = logout
 
-in `src/sections/home/Titel.svelte`
+in [src/sections/home/Titel.svelte](src/sections/home/Titel.svelte)
 
     Your portfolio
     Robin Hood Coop
