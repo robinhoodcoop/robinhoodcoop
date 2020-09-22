@@ -88,6 +88,7 @@
       <div class="data">
         <table class="list">
           <tr>
+            <th>Index number</th>
             <th>Address</th>
             <th>Shares</th>
             <th />
@@ -95,8 +96,9 @@
           {#if loading}
             <Loading />
           {:else}
-            {#each members as member}
+            {#each members as member, i}
               <tr class="small">
+                <td>{i + 1}</td>
                 <td><a href="{'https://etherscan.io/address/' + member.address}" target="_blank">{member.address}</a></td>
                 <td>{member.shares}</td>
                 <td>
